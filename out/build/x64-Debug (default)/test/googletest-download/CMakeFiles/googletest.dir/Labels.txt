@@ -1,0 +1,14 @@
+# Target labels
+ googletest
+# Source files and their labels
+C:/cpp/weriety/out/build/x64-Debug (default)/test/googletest-download/CMakeFiles/googletest
+C:/cpp/weriety/out/build/x64-Debug (default)/test/googletest-download/CMakeFiles/googletest.rule
+C:/cpp/weriety/out/build/x64-Debug (default)/test/googletest-download/CMakeFiles/googletest-complete.rule
+C:/cpp/weriety/out/build/x64-Debug (default)/test/googletest-download/googletest-prefix/src/googletest-stamp/googletest-install.rule
+C:/cpp/weriety/out/build/x64-Debug (default)/test/googletest-download/googletest-prefix/src/googletest-stamp/googletest-mkdir.rule
+C:/cpp/weriety/out/build/x64-Debug (default)/test/googletest-download/googletest-prefix/src/googletest-stamp/googletest-download.rule
+C:/cpp/weriety/out/build/x64-Debug (default)/test/googletest-download/googletest-prefix/src/googletest-stamp/googletest-update.rule
+C:/cpp/weriety/out/build/x64-Debug (default)/test/googletest-download/googletest-prefix/src/googletest-stamp/googletest-patch.rule
+C:/cpp/weriety/out/build/x64-Debug (default)/test/googletest-download/googletest-prefix/src/googletest-stamp/googletest-configure.rule
+C:/cpp/weriety/out/build/x64-Debug (default)/test/googletest-download/googletest-prefix/src/googletest-stamp/googletest-build.rule
+C:/cpp/weriety/out/build/x64-Debug (default)/test/googletest-download/googletest-prefix/src/googletest-stamp/googletest-test.rule
