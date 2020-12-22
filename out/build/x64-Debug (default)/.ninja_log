@@ -1,6 +1,0 @@
-# ninja log v5
-4	633	630263586	sample/CMakeFiles/sample.dir/src/main.cpp.obj	592fc0a3bd34c7fb
-0	1053	630263587	plugin/CMakeFiles/weriety_plugin.dir/just_test.cpp.obj	5feaa6604ce5bde
-1053	1462	630263587	bin/weriety_plugin.dll	3912dcff1617afe
-1053	1462	630263587	plugin/weriety_plugin.lib	3912dcff1617afe
-1462	1835	630263587	bin/sample.exe	12d9217a05412893
