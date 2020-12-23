@@ -8,10 +8,17 @@
 
 #pragma once
 
-#ifdef  EXPORT 
-    /*Enabled as "export" while compiling the dll project*/
-    #define W_API __declspec(dllexport)  
- #else
-    /*Enabled as "import" in the Client side for using already created dll file*/
-    #define W_API __declspec(dllimport)  
- #endif
+#include <Windows.h>
+#include <werapi.h>
+
+namespace wr {
+
+    class exception_handler final {
+    public:
+        exception_handler() = default;
+
+        void handle_exception(PWER_RUNTIME_EXCEPTION_INFORMATION exception);
+
+    };
+
+}

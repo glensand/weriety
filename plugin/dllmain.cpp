@@ -6,12 +6,17 @@
  * this file. If not, please write to: bezborodoff.gleb@gmail.com, or visit : https://github.com/glensand/weriety
  */
 
-#pragma once
+#include "Windows.h"
+#include "wer_plugin_facade_impl.h"
 
-#ifdef  EXPORT 
-    /*Enabled as "export" while compiling the dll project*/
-    #define W_API __declspec(dllexport)  
- #else
-    /*Enabled as "import" in the Client side for using already created dll file*/
-    #define W_API __declspec(dllimport)  
- #endif
+namespace wr {
+    wer_plugin_facade* facade = nullptr;
+}
+
+BOOL APIENTRY DllMain(HMODULE, DWORD, LPVOID)
+{
+    wr::wer_plugin_facade_impl facade_impl;
+    facade_impl.configure(L"");
+    wr::facade = &facade_impl;
+    return TRUE;
+}

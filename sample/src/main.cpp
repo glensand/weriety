@@ -1,9 +1,16 @@
-#include "just_test.h"
+#include <Windows.h>
+#include <werapi.h>
+#include <stdexcept>
+
+#include <filesystem>
+#include <iostream>
 
 int main()
 {
-    just_test::test();
-    just_test obj;
+    const auto path = std::filesystem::current_path();
+    const auto dllHandler = path.wstring() + L"\\weriety_plugin.dll";
 
-    return 0;
+    const auto result = WerRegisterRuntimeExceptionModule(dllHandler.c_str(), NULL);
+    std::cout << (result == S_OK) << std::endl;
+    RaiseException(0xABCD1234, EXCEPTION_NONCONTINUABLE, 0, NULL);
 }
